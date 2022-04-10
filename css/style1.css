@@ -91,6 +91,10 @@ form{
     grid-row: 1/2;
     justify-self:left;
     height: 100%;
+    transition: all 2s;
+}
+.header__logo:hover{
+    height: 200px;
 }
 .nav__links{        
     list-style: none;
