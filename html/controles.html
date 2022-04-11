@@ -6,20 +6,76 @@
         <link rel="shortcut icon" href="../imagenes/logo.PNG" />
         <title>AscensoresMDQ</title>
         <link rel="stylesheet" href="../css/style1.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </head>
     <header>
         <h1 class="header__titulo">Controles</h1>
         <img class="header__logo"  src="../imagenes/logo.PNG" alt="">
         <!--Bara De Navegacion-->
-        <nav>
-            <ul class="nav__links"><!-- lista desordenada para links de la web -->
-                <li><a target="" href="../index.html">Inicio</a></li>
-                <li><a target="" href="/html/controles.html">Controles</a></li>
-                <li><a target="" href="/html/Cabinas.html">Cabinas</a></li>
-                <li><a target="" href="/html/Contactanos.html">Contactanos</a></li>
-                <li class="sobreNosotros" ><a  target="" href="/html/SobreNosotros.html">SobreNosotros</a></li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <nav>
+                <ul class="nav__links"><!-- lista desordenada para links de la web -->
+                    <li><a target="" href="../index.html">Inicio</a></li>
+                    <li><a target="" href="../html/controles.html">Controles</a></li>
+                    <li><a target="" href="../html/Cabinas.html">Cabinas</a></li>
+                    <li><a target="" href="../html/Contactanos.html">Contactanos</a></li>
+                    <li class="sobreNosotros" ><a  target="" href="../html/SobreNosotros.html">SobreNosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav2">
+            <nav class=" navbar navbar-light fixed-top ">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/controles.html">Controles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Cabinas.html">Cabinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/SobreNosotros.html">SobreNosotros</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                        </ul>
+                        <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                    </div>
+                </div>
+                </nav>
+            </div>
     </header>
     <body>
         <section class="grilla">
@@ -88,7 +144,7 @@
                 <li><a target="" href="html/SobreNosotros.html">SobreNosotros</a></li>
             </ul>>   
                 <!-- Contenido de Footer -->
-            <h3 style="color: white;">AscensoresMDQ ©2022 | Hacemos ascensores para las personas no para los edificios</h3>
+            <h3 class="footer__texto">AscensoresMDQ ©2022 | Hacemos ascensores para las personas no para los edificios</h3>
                 <!-- Redes del footer -->
                 <a href="https://www.instagram.com/geramartin.n/" target="_blank"><img src="../imagenes/insta.png" width="2%" alt=""></a>
                 <a href="https://www.youtube.com/watch?v=aNX0TBRUQx4" target="_blank"><img src="../imagenes/yt.png" width="2%" alt=""></a>
