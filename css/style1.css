@@ -346,6 +346,7 @@ form{
     color: white;
     height: 600px;
     width: 100%;
+    font-size: 20px;
 }
 .mapa{
     text-align: center;
@@ -376,7 +377,7 @@ form{
     background-color: white;
     /* text-align: center; */
     font-size: 20px;
-    height: 150px;
+    height: auto;
 }
 .mision{
     width: 100%;
@@ -594,7 +595,7 @@ form{
         transform: rotate(0deg);
     }
     .control1__texto{
-        font-size: 20px;
+        font-size: 13px;
         height: 100%;
         grid-row: 3/4;
         grid-column: 1/2;
@@ -640,7 +641,7 @@ form{
         transform: rotate(0deg);
     }
     .control3__texto{
-        font-size: 15px;
+        font-size: 14px;
         max-height: max-content;
         grid-row: 3/4;
         grid-column: 1/2;
@@ -771,6 +772,7 @@ form{
         grid-row: 2/3;
     }
     .vision__texto{
+        font-size: 18px;
         grid-row: 3/4;  
         background-color: rgba(255, 255, 255, 0.5);
     }
@@ -780,5 +782,7 @@ form{
         grid-auto-rows: 400px 400px;
         grid-row-gap: 10px;
     }
-
+    .historia__texto{
+        font-size: 15px ;
+    }
 } 
