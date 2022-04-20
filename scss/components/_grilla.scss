@@ -1,0 +1,26 @@
+body{
+    .grilla{
+        display: grid;
+        grid-template-rows: 600px 600px 600px;
+        grid-template-columns: 100%;
+        grid-row-gap: 50px;
+    }
+    .fila{
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: 100%;
+    }
+}
+@media only screen and (max-width:768px){
+    body{
+        .grilla{
+        grid-row-gap:10px;
+        }
+        .fila{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-auto-rows: 400px 400px;
+            grid-row-gap: 10px;
+        }
+    }
+}

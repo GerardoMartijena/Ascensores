@@ -1,0 +1,11 @@
+body{
+    background-image: url("../imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@media only screen and (max-width:768px){
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+}
