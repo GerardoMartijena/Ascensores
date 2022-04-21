@@ -1,26 +1,27 @@
 body{
     section{
         .historia{
-            height : 600px;
+            height : auto;
             .historia__img{
                 background-color: white;
                 width: 100%;
-                height: 400px;
+                height: auto;
             }
             .historia__titulo{
                 background-color: white;
-                font-size: 25px;
+                font-size: $tamanio__titulo;
                 /* margin: 10px 0px 10px; */
             }
             .historia__texto{
                 background-color: white;
                 /* text-align: center; */
-                font-size: 20px;
+                font-size: tamanio__texto;
                 height: auto;
             }
         }
         .mision{
         width: 100%;
+        height: auto;
         background-color: white;
         grid-column: 1/2;
             .mision__img{
@@ -29,15 +30,15 @@ body{
                 /* background-color: white; */
                 /* padding: 0px 0px 30px 30px; */
                 width: 100%;
-                height: 400px;
+                /* height: 400px; */
             }
             .mision__titulo{
                 background-color: white;
-                font-size: 30px;
+                font-size: $tamanio__titulo;
             }
             .mision__texto{
                 background-color: white;
-                font-size: 20px;
+                font-size: tamanio__texto;
                 text-align: center;
                 display: flex;
             }
@@ -45,19 +46,20 @@ body{
         .vision{
             grid-column: 3/4;
             width: 100%;
+            height: auto;
             background-color: white;
             .vision__img{
                 display: flex;
                 justify-content: right;
                 /* padding: 0px 0px 30px 30px; */
                 width: 100%;
-                height: 400px;
+                /* height: 400px; */
             }
             .vision__titulo{
-                font-size: 30px;
+                font-size: $tamanio__titulo;
             }
             .vision__texto{
-                font-size: 20px;
+                font-size: tamanio__texto;
                 text-align: center;
                 text-align: center;
             }
@@ -69,18 +71,19 @@ body{
         section{
             .historia{
                 .historia__texto{
-                    font-size: 15px ;
+                    font-size: $tamanio__texto__768p ;
                 }
             }
             .mision{
                 width: 100%;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows:45% 10% 45%;
+                grid-template-rows: repeat(3,auto);
                 grid-row: 1/2;
+                grid-column: 1/2;
                 background-image:url(../imagenes/SobreNosotros2.jpg);
                 .mision__img{
-                    display: none;
+                    opacity: 0;
                 }
                 .mision__titulo{
                     grid-row: 2/3;
@@ -95,19 +98,19 @@ body{
                 width: 100%;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows:45% 10% 45%;
+                grid-template-rows: repeat(3,auto);
                 grid-row: 2/3;
                 grid-column: 1/2;
                 background-image: url(../imagenes/SobreNosotros3.jpg);
+                background-size: cover;
                 .vision__img{
-                    display: none;
+                    opacity: 0;
                 }
                 .vision__titulo{
                     background-color: rgba(255, 255, 255, 0.5);
                     grid-row: 2/3;
                 }
                 .vision__texto{
-                    font-size: 18px;
                     grid-row: 3/4;  
                     background-color: rgba(255, 255, 255, 0.5);
                 }

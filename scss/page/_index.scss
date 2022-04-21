@@ -1,9 +1,9 @@
 body{
     .grilla{
         .ascensores{
-            height: 600px;
+            /* height: 600px; */
             width: 100%;
-            background-color: rgba(118, 165, 175, 0.9);
+            background-color: $color__fondo__1;
             text-align: center;
             align-items: center;
             display: grid;
@@ -19,19 +19,19 @@ body{
                 justify-self: stretch;
                 align-items: stretch;
                 grid-column: 2/3;
-                font-size: 40px;
+                font-size: $tamanio__titulo;
                 transform: rotate(270deg);
             }
             .ascensores__texto{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: 25px;
+                font-size: $tamanio__texto;
                 grid-column: 3/4;
             }
         }
         .noticias{
-            height: 600px;
-            background-color: rgba(45, 82, 90, 0.9);
+            /* height: 600px; */
+            background-color: $color__fondo__index__2;
             text-align: center;
             align-items: center;
             display: grid;
@@ -40,7 +40,7 @@ body{
             .noticias__titulo{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: 40px;
+                font-size: $tamanio__titulo;
                 transform: rotate(90deg);
                 grid-column: 2/3;
             }
@@ -53,12 +53,12 @@ body{
             .noticias__texto{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: 25px;
+                font-size: $tamanio__texto;
             }
         }
         .novedades{
-            height: 600px;
-            background-color: rgba(118, 165, 175, 0.9);
+            /* height: 600px; */
+            background-color: $color__fondo__1;
             text-align: center;
             align-items: center;
             display: grid;
@@ -74,14 +74,14 @@ body{
                 justify-self: stretch;
                 align-items: stretch;
                 /* tamaño de h3 */
-                font-size: 40px;
+                font-size: $tamanio__titulo;
                 /* Rotacion de los subtitulos de los articulos */
                 transform: rotate(270deg);
                 grid-column: 2/3;
             }
             .novedades__texto{
                 /* centrado de parrafos y agregado de margenes */
-                font-size: 25px;
+                font-size: $tamanio__texto;
                 grid-column: 3/4;
             }
         }
@@ -92,12 +92,12 @@ body{
         .grilla{
             .ascensores{
                 display: grid;
-                grid-template-rows:45% 10% 45%;
+                grid-template-rows:repeat(3,auto);
                 grid-template-columns: 100%;
                 background-image: url(../imagenes/index2.jpg);
                 background-size: cover;
                 .ascensores__img{
-                    display: none;
+                    opacity: 0;
                     height: 100%;
                     width: 100%;
                     grid-row: 1/2;
@@ -110,31 +110,31 @@ body{
                     grid-row: 2/3;
                     grid-column: 1/2;
                     transform: rotate(0deg);
-                    background-color:  rgba(255, 255, 255, 0.5);
+                    background-color:  $color__fondo__2;
                 }
                 .ascensores__texto{
                     font-size: 20px;
                     height: 100%;
                     grid-row: 3/4;
                     grid-column: 1/2;
-                    background-color:  rgba(255, 255, 255, 0.5);
+                    background-color:  $color__fondo__2;
                 }
             }
             .noticias{
                 display: grid;
-                grid-template-rows:45% 10% 45%;
+                grid-template-rows:repeat(3,auto);
                 grid-template-columns: 100%;
                 background-image: url(../imagenes/index1.jpg);
                 background-size: cover;
                 .noticias__img{
-                    display: none;
+                    opacity: 0;
                     height: 100%;
                     width: 100%;
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }
                 .noticias__titulo{
-                    background-color:  rgba(255, 255, 255, 0.5);
+                    background-color:  $color__fondo__2;
                     text-align: start;
                     height: 100%;
                     font-size: 30px;
@@ -152,12 +152,12 @@ body{
             }
             .novedades{
                 display: grid;
-                grid-template-rows:45% 10% 45%;
+                grid-template-rows:repeat(3,auto);
                 grid-template-columns: 100%;
                 background-image: url(../imagenes/index2.jpg);   
                 background-size: cover;
                 .novedades__img{
-                    display: none;
+                    opacity: 0;
                     height: 100%;
                     width: 100%;
                     grid-row: 1/2;
