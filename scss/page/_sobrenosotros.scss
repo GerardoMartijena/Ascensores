@@ -9,13 +9,13 @@ body{
             }
             .historia__titulo{
                 background-color: white;
-                font-size: $tamanio__titulo;
+                font-size: map-get($texto, tamanio__titulo);/* maps */
                 /* margin: 10px 0px 10px; */
             }
             .historia__texto{
                 background-color: white;
                 /* text-align: center; */
-                font-size: tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
                 height: auto;
             }
         }
@@ -34,11 +34,11 @@ body{
             }
             .mision__titulo{
                 background-color: white;
-                font-size: $tamanio__titulo;
+                font-size: map-get($texto, tamanio__titulo);/* maps */
             }
             .mision__texto{
                 background-color: white;
-                font-size: tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
                 text-align: center;
                 display: flex;
             }
@@ -56,10 +56,10 @@ body{
                 /* height: 400px; */
             }
             .vision__titulo{
-                font-size: $tamanio__titulo;
+                font-size: map-get($texto, tamanio__titulo);/* maps */
             }
             .vision__texto{
-                font-size: tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
                 text-align: center;
                 text-align: center;
             }
@@ -71,7 +71,7 @@ body{
         section{
             .historia{
                 .historia__texto{
-                    font-size: $tamanio__texto__768p ;
+                    font-size: map-get($texto, tamanio__texto__768p) ;/* maps */
                 }
             }
             .mision{

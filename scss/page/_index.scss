@@ -12,20 +12,20 @@ body{
             .ascensores__img{
                 justify-self: stretch;
                 height: 100%;
-                max-height: auto;
+                max-height: 600px;
                 grid-column: 1/2;
             }
             .ascensores__titulo{
                 justify-self: stretch;
                 align-items: stretch;
                 grid-column: 2/3;
-                font-size: $tamanio__titulo;
+                font-size: map-get($texto, tamanio__titulo);
                 transform: rotate(270deg);
             }
             .ascensores__texto{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: $tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);
                 grid-column: 3/4;
             }
         }
@@ -40,7 +40,7 @@ body{
             .noticias__titulo{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: $tamanio__titulo;
+                font-size: map-get($texto, tamanio__titulo);/* maps */
                 transform: rotate(90deg);
                 grid-column: 2/3;
             }
@@ -48,12 +48,12 @@ body{
                 justify-self: stretch;
                 height: 100%;
                 max-height: 600px;
-                grid-column: 3/4;
+                grid-column: 3/4; 
             }
             .noticias__texto{
                 justify-self: stretch;
                 align-items: stretch;
-                font-size: $tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
             }
         }
         .novedades{
@@ -73,15 +73,12 @@ body{
             .novedades__titulo{
                 justify-self: stretch;
                 align-items: stretch;
-                /* tamaño de h3 */
-                font-size: $tamanio__titulo;
-                /* Rotacion de los subtitulos de los articulos */
+                font-size: map-get($texto, tamanio__titulo);/* maps */
                 transform: rotate(270deg);
                 grid-column: 2/3;
             }
             .novedades__texto{
-                /* centrado de parrafos y agregado de margenes */
-                font-size: $tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
                 grid-column: 3/4;
             }
         }
@@ -98,8 +95,7 @@ body{
                 background-size: cover;
                 .ascensores__img{
                     opacity: 0;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }
@@ -128,8 +124,7 @@ body{
                 background-size: cover;
                 .noticias__img{
                     opacity: 0;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }
@@ -158,8 +153,7 @@ body{
                 background-size: cover;
                 .novedades__img{
                     opacity: 0;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }

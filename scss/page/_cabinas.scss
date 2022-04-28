@@ -13,24 +13,21 @@ body{
                 color: white;
                 margin: 10px;
                 text-align: center;
-                font-size: $tamanio__texto;
+                font-size: map-get($texto, tamanio__texto);/* maps */
                 width: 70%;
             }
         }
+        /* Extend */
         .cabina2{
             background-color: $color__fondo__3;
             align-items: center;
             display: flex;
             flex-direction: row;
             .cabina2__img{
-                width: 30%;
-                height: 600px;
+                @extend .cabina1__img;
             }
             .cabina2__texto{
-                color: white;
-                text-align: center;
-                font-size: $tamanio__texto;
-                width: 70%;
+                @extend .cabina1__texto;
             }
         }
         .cabina3{
@@ -39,17 +36,13 @@ body{
             display: flex;
             flex-direction: row;
             .cabina3__img{
-                width: 30%;
-                height: 600px;
+                @extend .cabina1__img;
             }
             .cabina3__texto{
-                color: white;
-                text-align: center;
-                font-size: $tamanio__texto;
-                width: 70%;
+                @extend .cabina1__texto;
             }
         }
-        
+        /* Extend */
     }
 }
 @media only screen and (max-width:768px){
@@ -60,12 +53,11 @@ body{
                 grid-template-rows:70% 30%;
                 grid-template-columns:100%;
                 background-image: url(../imagenes/cabina3.jfif.png);
-                height: $tamanio__cont2;
+                height: map-get($texto, tamanio__cont2); /* maps */
                 background-repeat: no-repeat;
                 .cabina1__img{
                     display: none;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     max-height: 600px;
                     grid-row: 1/2;
                     grid-column: 1/2;
@@ -73,8 +65,7 @@ body{
                 .cabina1__texto{
                     background-color: rgba(0, 0, 0, 0.8);
                     font-size: 20px;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     grid-row: 2/3;
                     grid-column: 1/2;
                 }
@@ -84,19 +75,17 @@ body{
                 grid-template-rows:70% 30%;
                 grid-template-columns: 100%;
                 background-image: url(../imagenes/cabina4.jfif.png);
-                height: $tamanio__cont2;
+                height: map-get($texto, tamanio__cont2);/* maps */
                 background-repeat: no-repeat;
                 .cabina2__img{
                     display: none;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }
                 .cabina2__texto{
                     font-size: 20px;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     max-height: 231px;
                     grid-row: 2/3;
                     grid-column: 1/2;
@@ -108,20 +97,19 @@ body{
                 grid-template-rows:70% 30%;
                 grid-template-columns: 100%;
                 background-image: url(../imagenes/cabina6.png);
-                height: $tamanio__cont2;
+                height: map-get($texto, tamanio__cont2);/* maps */
                 background-repeat: no-repeat;
                 .cabina3__img{
                     display: none;
-                    height: 100%;
+                    @include strech(100%,100%);
                     max-height: 600px;
-                    width: 100%;
+                    
                     grid-row: 1/2;
                     grid-column: 1/2;
                 }
                 .cabina3__texto{
                     font-size: 20px;
-                    height: 100%;
-                    width: 100%;
+                    @include strech(100%,100%);
                     max-height: 231px;
                     grid-row: 2/3;
                     grid-column: 1/2;

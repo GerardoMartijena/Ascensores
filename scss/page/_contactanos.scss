@@ -6,9 +6,9 @@ body{
             justify-content: center;
             align-items: center;
             background-color: rgba( 0, 0, 0, 0.6);
-            font-size: $tamanio__texto;
+            font-size: map-get($texto, tamanio__texto);/* maps */
             color: white;
-            height: $tamanio__cont;
+            height: map-get($texto, tamanio__cont);/* maps */
             width: 100%;
             form{
                 height: 100%;
@@ -24,7 +24,7 @@ body{
         .info{
             background-color: rgba(255, 255, 255, 0.5);
             text-align: center; 
-            font-size: $tamanio__texto;
+            font-size: map-get($texto, tamanio__texto);/* maps */
         }
     }
 }

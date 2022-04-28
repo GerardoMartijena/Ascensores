@@ -1,0 +1,4 @@
+*Agrege estas keywords : ascensores, ascensores mar del plata , ascensoresmdp , ascensoresmdq
+*Cambie el <title> de todos los html con una descripcion breve: 
+AscensoresMDQ - Instalacion de ascensores mar del plata , Cabinas - Con el mejor confort y diseños , Controles - Con lo ultimo y mejor del marcado
+*Le agrege <h1> a los titulos de las paginas 
