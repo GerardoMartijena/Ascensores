@@ -1,4 +1,7 @@
 body{
+    .fila{
+        margin: 10px;
+    }
     section{
         .historia{
             height : auto;
@@ -8,6 +11,7 @@ body{
                 height: auto;
             }
             .historia__titulo{
+                margin: 0px;
                 background-color: white;
                 font-size: map-get($texto, tamanio__titulo);/* maps */
                 /* margin: 10px 0px 10px; */
